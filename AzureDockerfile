@@ -1,3 +1,4 @@
 FROM tomcat:latest
-ENV rollback=false
-RUN echo -e "#!/bin/bash \nvariable=${rollback}" > ./test1.sh
+COPY ./webapp.war /usr/local/tomcat/webapps
+RUN cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+
