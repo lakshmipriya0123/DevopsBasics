@@ -29,5 +29,5 @@ steps:
     containerRegistry: 'docker-exp'
     repository: 'lakshmi9822 / first'
     command: 'buildAndPush'
-    Dockerfile: '**/AZDockerfile'
+    Dockerfile: '**/Dockerfile'
 
